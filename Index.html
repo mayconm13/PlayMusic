@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <!-- define a ligua de origem e carregamento da pagina -->
+
+  <head>
+    <!-- Cabeça do código, carrega os recursos a serem exibidos -->
+
+    <!-- facilita a utilização de simbolos e letras para inscrição de texto  -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- carrega o estilo de fonte utilizado no css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <!-- carrega os icones utilizados na pagina -->
+
+    <link rel="icon" type="image/png" href="./assets/icon.png" />
+    <!-- insere a o icone da pagina -->
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- carrega as modifocações feitas nos icones no css -->
+
+    <!-- carrega a estilização do css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- rel define o que será carregado & href funciona como um link -->
+
+    <title>PlayMusic</title>
+    <!-- define o titulo da pagina web -->
+  </head>
+
+  <body>
+    <!-- carrega o contéudo da pagina -->
+
+    <div class="Content">
+      <!-- div(s) faz a dicisão da pagina em caixas que podem ser modificadas em conjunto ou individualmente -->
+
+      <h2 id="title">My_Playlist</h2>
+      <!-- titulo do contéudo exibido na pagina web -->
+
+      <img id="Photography" alt="Song Cover" class="borda-img"/>
+      <!-- img carrega uma imagem  -->
+
+      <audio id="audio"></audio>
+      <!-- audio carrega um audio utilizado na pagina web -->
+
+      <div id="Organization">
+        <!-- id e individual de cada tag -->
+
+        <div id="Names">
+          <div id="SongName"><p>Nome da Música</p></div>
+          <!-- P define um paragrafo -->
+          <div id="AuthorName" ><p>Nome do Autor</p></div>
+          <!-- class e mais generico pode abrange masi de uma tag, se estas forem definidas na mesma classe -->
+        </div>
+
+        <button id="Like" class="button light-color">
+          <i class="bx bx-heart"></i>
+        </button>
+        <!-- button insere um botão -->
+      </div>
+
+      <div id="progress-cointainer">
+        <div id="Rail">
+          <div id="current-Progress"></div>
+        </div>
+
+        <div id="TimeBox">
+          <div id="SongTime">00:00:00</div>
+          <!-- tudo escrito entre as tags será exibido na pagina web -->
+          <div id="TotalTime">00:00:00</div>
+        </div>
+      </div>
+
+      <div id="Buttons">
+        <button id="shuffle" class="button">
+          <i class="bx bx-shuffle"></i>
+        </button>
+        <button id="rewind" class="button button-navigate">
+          <i class="bx bx-rewind"></i>
+        </button>
+        <button id="play-circle" class="button button-biggest">
+          <i class="bx bx-play-circle"></i>
+        </button>
+        <button id="fast-forward" class="button button-navigate">
+          <i class="bx bx-fast-forward"></i>
+        </button>
+        <button id="repeat" class="button"><i class="bx bx-repeat"></i></button>
+      </div>
+
+      <!-- Light & Dark Mode -->
+      <!-- Icones de Sol e Lua -->
+
+      <div id="dark-light">
+        <input type="checkbox" class="checkbox" id="chk">
+        <label class="label">
+        <i class="bx bxs-moon icon moon"></i>
+        <i class="bx bxs-sun icon sun"></i>
+        <div class="ball"></div>
+        </label>
+      </div>
+
+    </div>
+
+    <script src="./index.js"></script>
+    <!-- carrega o JS. no HTML-->
+  </body>
+</html>
+
+<!--
+
+
+
+  <i class='bx bxs-volume-full bx-sm'></i>
+  <i class='bx bxs-volume-low bx-sm' ></i>
+  <i class='bx bxs-volume-mute bx-sm' ></i>
+</div>
+
+<div>
+  <i class='bx bxs-playlist'></i>
+</div>
+-->
