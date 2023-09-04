@@ -10,7 +10,7 @@
 
 /* edita todo o corpo da pagina, como cor, fonte, posição, prenchimento, alinhamneto, e se terá ou não colunas */
 body {
-  background: linear-gradient(to bottom, rgb(146, 254, 157) 0%, rgb(0, 201, 255) 100%); left: -1139px; top: -1114px;
+  background: linear-gradient(to bottom, rgb(146, 254, 157) 0%, rgb(0, 201, 255) 100%); left: -1139px; top: -1114px no-repeat;
   height: 100vh;
   color: black;
   font-family: sans-serif;
@@ -22,7 +22,7 @@ body {
 
 /* especificações estabelecidas para a inserção de class dark no body do html*/
 body.dark {
- background: linear-gradient(to bottom, rgb(67, 67, 67) 0%, black 100%); left: -1241px; top: -1088px;
+ background: linear-gradient(to bottom, rgb(67, 67, 67) 0%, black 100%); left: -1241px; top: -1088px no-repeat;
   color: white;
   transition: background 0.2s linear;
 }
